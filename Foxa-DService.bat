@@ -11,6 +11,7 @@ if exist %temp%\DownloadReport.dat (
 ver | find "6." > NUL && set OSCheck=LowVer
 ver | find "10.0" >NUL && set OSCheck=HighVer
 
+title task.download.file
 if %enginemode%==auto goto AutoMode
 if %enginemode%==powershell goto PS-Download
 if %enginemode%==certutil goto CU-Download
