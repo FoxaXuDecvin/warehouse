@@ -92,7 +92,7 @@ if exist %temp%\Download-OCCUPY (
     del /q %temp%\Download-OCCUPY
 )
 title task.download.file (Complete)
-ping 127.0.0.1 -n 4 >nul
+ping 127.0.0.1 -n 2 >nul
 exit
 
 :WarningSafe
