@@ -33,11 +33,12 @@ exit
 
 :AutoMode
 set DE=BA
-ver | find "6." > NUL && set DE=CU
+ver | find "6." > NUL && set DE=BA
 ver | find "10.0" >NUL && set DE=PS
 
 if %DE%==PS goto PS-Download
 if %DE%==CU goto CU-Download
+if %DE%==BA goto BA-Download
 goto BA-Download
 
 :PS-Download
